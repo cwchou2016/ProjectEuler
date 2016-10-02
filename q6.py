@@ -10,22 +10,24 @@
 #  Find the difference between the sum of the squares of the first one
 #  hundred natural numbers and the square of the sum.
 
+
 def sqrsum(num):
     '''
     return the sum of the sqares of num
     '''
-    res=0
-    for i in xrange(1, num+1):
-        res=res + (i **2)
+    res = 0
+    for i in xrange(1, num + 1):
+        res = res + (i ** 2)
     return res
+
 
 def sumsqr(num):
     '''
     return the squres the sume of num
     '''
-    res=sum(range(1, num+1))
-    res=res**2
+    res = sum(range(1, num + 1))
+    res = res**2
     return res
 
-num=100 #change num
-print sumsqr(num)-sqrsum(num)
+num = 100  # change num
+print sumsqr(num) - sqrsum(num)

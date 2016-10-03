@@ -11,7 +11,7 @@ def getPrime(num):
     '''
     for num_i in xrange(1, num + 1):
         if num_i != 1:
-            for j in xrange(2, (num_i // 2)):
+            for j in xrange(2, (num_i // 2)+1):
                 if num_i % j == 0:
                     break
             else:

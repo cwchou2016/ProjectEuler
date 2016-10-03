@@ -17,7 +17,7 @@ def sqrsum(num):
     '''
     res = 0
     for i in xrange(1, num + 1):
-        res = res + (i ** 2)
+        res = res + (i**2)
     return res
 
 
@@ -28,6 +28,7 @@ def sumsqr(num):
     res = sum(range(1, num + 1))
     res = res**2
     return res
+
 
 num = 100  # change num
 print sumsqr(num) - sqrsum(num)
